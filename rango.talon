@@ -59,14 +59,14 @@ show <user.rango_target>:
   user.rango_command_with_target("showLink", rango_target)
 
 # Scroll
-upper: user.rango_command_without_target("scrollUpPage")
-upper <number>: user.rango_command_without_target("scrollUpPage", number)
-upper all: user.rango_command_without_target("scrollUpPage", 9999)
+ping: user.rango_command_without_target("scrollUpPage")
+ping <number>: user.rango_command_without_target("scrollUpPage", number)
+ping all: user.rango_command_without_target("scrollUpPage", 9999)
 tiny up: user.rango_command_without_target("scrollUpPage", 0.2)
 
-downer: user.rango_command_without_target("scrollDownPage")
-downer <number>: user.rango_command_without_target("scrollDownPage", number)
-downer all: user.rango_command_without_target("scrollDownPage", 9999)
+pong: user.rango_command_without_target("scrollDownPage")
+pong <number>: user.rango_command_without_target("scrollDownPage", number)
+pong all: user.rango_command_without_target("scrollDownPage", 9999)
 tiny down: user.rango_command_without_target("scrollDownPage", 0.2)
 
 scroll left: user.rango_command_without_target("scrollLeftPage")
@@ -78,25 +78,25 @@ scroll right all: user.rango_command_without_target("scrollRightPage", 9999)
 tiny right: user.rango_command_without_target("scrollRightPage", 0.2)
 
 # Scroll the left or right asides
-upper left: user.rango_command_without_target("scrollUpLeftAside")
-upper left all: user.rango_command_without_target("scrollUpLeftAside", 9999)
+ping left: user.rango_command_without_target("scrollUpLeftAside")
+ping left all: user.rango_command_without_target("scrollUpLeftAside", 9999)
 
-downer left: user.rango_command_without_target("scrollDownLeftAside")
-downer left all: user.rango_command_without_target("scrollDownLeftAside", 9999)
+pong left: user.rango_command_without_target("scrollDownLeftAside")
+pong left all: user.rango_command_without_target("scrollDownLeftAside", 9999)
 
-upper right: user.rango_command_without_target("scrollUpRightAside")
-upper right all: user.rango_command_without_target("scrollUpRightAside", 9999)
+ping right: user.rango_command_without_target("scrollUpRightAside")
+ping right all: user.rango_command_without_target("scrollUpRightAside", 9999)
 
-downer right: user.rango_command_without_target("scrollDownRightAside")
-downer right all: user.rango_command_without_target("scrollDownRightAside", 9999)
+pong right: user.rango_command_without_target("scrollDownRightAside")
+pong right all: user.rango_command_without_target("scrollDownRightAside", 9999)
 
 # Scroll the scrolling container that contains the target
-upper <user.rango_target>:
+ping <user.rango_target>:
   user.rango_command_with_target("scrollUpAtElement", rango_target)
 tiny up <user.rango_target>:
   user.rango_command_with_target("scrollUpAtElement", rango_target, 0.2)
 
-downer <user.rango_target>:
+pong <user.rango_target>:
   user.rango_command_with_target("scrollDownAtElement", rango_target)
 tiny down <user.rango_target>:
   user.rango_command_with_target("scrollDownAtElement", rango_target, 0.2)
